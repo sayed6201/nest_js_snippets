@@ -1,0 +1,10 @@
+1) Middleware - For things like authenticating a user
+2) Guards - To check a user is authenticated before getting to the controller (manager of the task) among other use cases
+3) Interceptor (before) - Can be used to log the method, url, userAgent, ip, controller name (ie., AppController), controller handler/method name (ie., getHello). Can also be used to transform incoming data
+4) Pipes - Can be used to freeze parameters in the request so it isn't mistakenly changed in the code. Also validate input data, transform input data, etc. Typical usage is validating request parameters with built in NestJS pipes like ParseIntPipe, ParseArrayPipe, ParseUUIDPipe
+5) Route handler - The "manager" that tells the provider (ie., service/worker/task implementer) what to do
+6) Interceptor (after) - Can get the response and status code after handled by the control handler (ie., the method/function inside the manager). Useful for logging. Can be accessed via next.handle().pipe(tap(res=>{}))
+7) Exception filters - To log errors internally or change the error response into user friendly wording for better UI
+Then it becomes a beautiful response
+
+Wooh! Just wrote the above to summarize what I learned - all info from going through this video. Thanks again and looking forward to your future videos! And ofc I gave your video a like as it's very helpful.
