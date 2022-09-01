@@ -17,9 +17,9 @@ import * as bcrypt from 'bcrypt';
 export class UsersRepository extends Repository<User> {
 
 
-    //--------------------------------------------------------------------------
-  //This method can be used in authservice rather than UsersRepository..
-  // you will have to use this.Usersrepo.create() -> rather than this.create()
+  //--------------------------------------------------------------------------
+  //  This method can be used in authservice rather than UsersRepository..
+  //  you will have to use this.Usersrepo.create() -> rather than this.create()
   //--------------------------------------------------------------------------
   async createUser(authCredentialsDto: AuthCredentialsDto): Promise<void> {
     const { username, password } = authCredentialsDto;

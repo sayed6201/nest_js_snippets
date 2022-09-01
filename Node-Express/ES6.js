@@ -11,9 +11,9 @@ const squareAlt = (x) => x * x
 
 
 
-------------------
+/*------------------
 this 
---------------------
+--------------------*/
 
 const event = {
  name: 'Birthday Party',
