@@ -49,7 +49,6 @@ This code sets an admin variable
 ===================================================================
 function middleware(req, res, next) {
     if (req.valid) {
-    
         //if you dont call return , this will try to execute res.send()
         //it will through an error
       return next()
