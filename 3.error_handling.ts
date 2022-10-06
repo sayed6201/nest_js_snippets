@@ -1,8 +1,8 @@
 
-===================================================================
-Duplicate username error handling
-  TypeORM, postgreSQL database
-===================================================================
+// ===================================================================
+// Duplicate username error handling
+  // TypeORM, postgreSQL database
+// ===================================================================
 
 import {
   ConflictException,
@@ -43,9 +43,9 @@ export class UsersRepository extends Repository<User> {
 }
 
 
-    -----------------------------------------------------
-    src\schemas\breed_schema.ts
-    -----------------------------------------------------
+    // -----------------------------------------------------
+    // src\schemas\breed_schema.ts
+    // -----------------------------------------------------
 
       import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
       import { Document } from 'mongoose';
@@ -68,9 +68,9 @@ export class UsersRepository extends Repository<User> {
 
 
 
-===================================================================
-Login Password and Username error checking
-===================================================================
+// ===================================================================
+// Login Password and Username error checking
+// ===================================================================
 
  async login(UserDTO: LoginDto) {
     const { email, password } = UserDTO;

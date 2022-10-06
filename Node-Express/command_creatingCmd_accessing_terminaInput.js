@@ -33,9 +33,9 @@ yargs.command({
 })
 console.log(yargs.argv)
 
----------------
- RUN:
--------------- 
+// ---------------
+//  RUN:
+// -------------- 
  node app.js add
   - //add will execute the yarg handler
 

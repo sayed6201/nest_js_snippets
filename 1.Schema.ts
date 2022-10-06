@@ -43,9 +43,9 @@ export const CatSchema = new mongoose.Schema({
 
 
 
--------------------------------------------------------------
-my-jwt-auth-project -> user.schema.ts
--------------------------------------------------------------
+// -------------------------------------------------------------
+// my-jwt-auth-project -> user.schema.ts
+// -------------------------------------------------------------
 import * as mongoose from 'mongoose';
 import * as bcrypt from 'bcrypt';
 
